@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  basePath: '/M4A-to-MP3-converter-',
+  basePath: process.env.GITHUB_ACTIONS ? '/M4A-to-MP3-converter-' : '',
   output: 'export',
   transpilePackages: ['motion'],
   webpack: (config, {dev}) => {
