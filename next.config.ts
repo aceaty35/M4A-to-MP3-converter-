@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  basePath: '/M4A-to-MP3-converter-',
   output: 'export',
   transpilePackages: ['motion'],
   webpack: (config, {dev}) => {
